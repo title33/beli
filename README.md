@@ -5,6 +5,7 @@ local TextLabel1 = Instance.new("TextLabel")
 local TextLabel2 = Instance.new("TextLabel")
 local TextLabel3 = Instance.new("TextLabel")
 local UIGradient = Instance.new("UIGradient")
+local Dragify = require(game:GetService("Players").LocalPlayer.PlayerScripts.Dragify)
 
 -- Properties:
 
@@ -47,20 +48,22 @@ TextLabel2.Text = game:GetService("Players").LocalPlayer.Data.Beli.Value  -- Dis
 TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel2.TextSize = 37.000
 
-TextLabel3.Name = "TextLabel 3"
-TextLabel3.Parent = Frame
-TextLabel3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel3.BackgroundTransparency = 1.000
-TextLabel3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel3.BorderSizePixel = 0
-TextLabel3.Position = UDim2.new(0.304598421, 0, 0.738738418, 0)
-TextLabel3.Size = UDim2.new(0, 200, 0, 50)
-TextLabel3.Font = Enum.Font.Arcade
-TextLabel3.Text = "( FALSE )"
-TextLabel3.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextLabel3.TextSize = 46.000
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.278427303, 0, 0.747821748, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.Arcade
+TextButton.Text = "( FALSE )"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.TextSize = 35.000
+TextButton.TextWrapped = true
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.03, Color3.fromRGB(38, 38, 38)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient.Rotation = 100
 UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.67, 0.40), NumberSequenceKeypoint.new(1.00, 0.00)}
 UIGradient.Parent = Frame
+
+local dragify = Dragify.new(Frame) 
