@@ -5,7 +5,7 @@ local TextLabel1 = Instance.new("TextLabel")
 local TextLabel2 = Instance.new("TextLabel")
 local TextLabel3 = Instance.new("TextLabel")
 local UIGradient = Instance.new("UIGradient")
-local Dragify = require(game:GetService("Players").LocalPlayer.PlayerScripts.Dragify)
+
 
 -- Properties:
 
@@ -66,4 +66,3 @@ UIGradient.Rotation = 100
 UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.67, 0.40), NumberSequenceKeypoint.new(1.00, 0.00)}
 UIGradient.Parent = Frame
 
-local dragify = Dragify.new(Frame) 
