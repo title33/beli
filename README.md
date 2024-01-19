@@ -6,7 +6,6 @@ local TextLabel2 = Instance.new("TextLabel")
 local TextLabel3 = Instance.new("TextLabel")
 local UIGradient = Instance.new("UIGradient")
 
-
 -- Properties:
 
 ScreenGui.Parent = game:GetService("CoreGui")
@@ -44,7 +43,7 @@ TextLabel2.BorderSizePixel = 0
 TextLabel2.Position = UDim2.new(0.376618832, 0, 0.419420302, 0)
 TextLabel2.Size = UDim2.new(0, 164, 0, 50)
 TextLabel2.Font = Enum.Font.Arcade
-TextLabel2.Text = game:GetService("Players").LocalPlayer.Data.Beli.Value  -- Display the value from Data.Beli
+TextLabel2.Text = game:GetService("Players").LocalPlayer.Data.Beli.Value -- Display the value from Data.Beli
 TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel2.TextSize = 37.000
 
@@ -65,4 +64,3 @@ UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.from
 UIGradient.Rotation = 100
 UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.67, 0.40), NumberSequenceKeypoint.new(1.00, 0.00)}
 UIGradient.Parent = Frame
-
