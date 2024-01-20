@@ -1,3 +1,4 @@
+
 spawn(function()
     while task.wait() do
         if game.Players.LocalPlayer.Team == nil then
