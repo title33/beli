@@ -82,7 +82,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.472527474, 0, 0.230769232, 0)
 TextLabel_2.Size = UDim2.new(0, 59, 0, 25)
 TextLabel_2.Font = Enum.Font.Unknown
-TextLabel_2.Text = "100"
+TextLabel_2.Text = game:GetService("Players").LocalPlayer.Data.Beli.Value 
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 28.000
 
