@@ -1,66 +1,200 @@
 local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local Xylo = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local TextLabel1 = Instance.new("TextLabel")
-local TextLabel2 = Instance.new("TextLabel")
-local TextLabel3 = Instance.new("TextLabel")
-local UIGradient = Instance.new("UIGradient")
+local OO = Instance.new("Frame")
+local Logo = Instance.new("ImageLabel")
+local Beli = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Script = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local Hub = Instance.new("TextLabel")
+local YouTube = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local UIStroke = Instance.new("UIStroke")
 
 -- Properties:
 
 ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.266961426, 0, 0.343351126, 0)
-Frame.Size = UDim2.new(0, 415, 0, 202)
+Xylo.Name = "Xylo"
+Xylo.Parent = ScreenGui
+Xylo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Xylo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Xylo.BorderSizePixel = 0
+Xylo.Position = UDim2.new(0.264109105, 0, 0.204515591, 0)
+Xylo.Size = UDim2.new(0, 293, 0, 241)
 
-UICorner.CornerRadius = UDim.new(0.100000001, 0)
-UICorner.Parent = Frame
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = Xylo
 
-TextLabel1.Name = "TextLabel 1"
-TextLabel1.Parent = Frame
-TextLabel1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel1.BackgroundTransparency = 1.000
-TextLabel1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel1.BorderSizePixel = 0
-TextLabel1.Position = UDim2.new(-0.0992284566, 0, 0.322847128, 0)
-TextLabel1.Size = UDim2.new(0, 249, 0, 69)
-TextLabel1.Font = Enum.Font.Arcade
-TextLabel1.Text = "BELI"
-TextLabel1.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel1.TextSize = 55.000
+OO.Name = "OO"
+OO.Parent = Xylo
+OO.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OO.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OO.BorderSizePixel = 0
+OO.Position = UDim2.new(-3.12466682e-07, 0, 0.365145296, 0)
+OO.Size = UDim2.new(0, 293, 0, -1)
 
-TextLabel2.Name = "TextLabel 2"
-TextLabel2.Parent = Frame
-TextLabel2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel2.BackgroundTransparency = 1.000
-TextLabel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel2.BorderSizePixel = 0
-TextLabel2.Position = UDim2.new(0.376618832, 0, 0.419420302, 0)
-TextLabel2.Size = UDim2.new(0, 164, 0, 50)
-TextLabel2.Font = Enum.Font.Arcade
-TextLabel2.Text = game:GetService("Players").LocalPlayer.Data.Beli.Value -- Display the value from Data.Beli
-TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel2.TextSize = 37.000
+Logo.Name = "Logo"
+Logo.Parent = Xylo
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(0.0375426635, 0, 0.0248962659, 0)
+Logo.Size = UDim2.new(0, 65, 0, 69)
+Logo.Image = "rbxassetid://14491200389"
 
-TextButton.Parent = Frame
+Beli.Name = "Beli"
+Beli.Parent = Xylo
+Beli.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Beli.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Beli.BorderSizePixel = 0
+Beli.Position = UDim2.new(0.0375425592, 0, 0.439833969, 0)
+Beli.Size = UDim2.new(0, 273, 0, 39)
+
+UICorner_2.CornerRadius = UDim.new(0, 2)
+UICorner_2.Parent = Beli
+
+TextLabel.Parent = Beli
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.0402930416, 0, 0.128205135, 0)
+TextLabel.Size = UDim2.new(0, 86, 0, 34)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "BELI :"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 32.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Beli
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.15384616, 0, 0.307692319, 0)
+TextLabel_2.Size = UDim2.new(0, 108, 0, 20)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "100"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 37.000
+
+Script.Name = "Script "
+Script.Parent = Xylo
+Script.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Script.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Script.BorderSizePixel = 0
+Script.Position = UDim2.new(0.0375425592, 0, 0.73443979, 0)
+Script.Size = UDim2.new(0, 273, 0, 52)
+
+UICorner_3.CornerRadius = UDim.new(0, 2)
+UICorner_3.Parent = Script
+
+TextButton.Parent = Script
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.278427303, 0, 0.747821748, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
-TextButton.Font = Enum.Font.Arcade
-TextButton.Text = "( FALSE )"
+TextButton.Size = UDim2.new(0, 273, 0, 52)
+TextButton.Font = Enum.Font.Unknown
+TextButton.Text = "[ FALSE ]"
 TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextButton.TextSize = 35.000
-TextButton.TextWrapped = true
+TextButton.TextSize = 30.000
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.03, Color3.fromRGB(38, 38, 38)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient.Rotation = 100
-UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(0.67, 0.40), NumberSequenceKeypoint.new(1.00, 0.00)}
-UIGradient.Parent = Frame
+Hub.Name = "Hub"
+Hub.Parent = Xylo
+Hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hub.BackgroundTransparency = 1.000
+Hub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hub.BorderSizePixel = 0
+Hub.Position = UDim2.new(0.324232191, 0, 0, 0)
+Hub.Size = UDim2.new(0, 118, 0, 50)
+Hub.Font = Enum.Font.Unknown
+Hub.Text = "Xylo Hub"
+Hub.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hub.TextSize = 35.000
+
+YouTube.Name = "YouTube"
+YouTube.Parent = Xylo
+YouTube.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+YouTube.BorderColor3 = Color3.fromRGB(0, 0, 0)
+YouTube.BorderSizePixel = 0
+YouTube.Position = UDim2.new(0.604095459, 0, 0.248962596, 0)
+YouTube.Size = UDim2.new(0, 115, 0, 26)
+
+UICorner_4.CornerRadius = UDim.new(0, 2)
+UICorner_4.Parent = YouTube
+
+TextButton_2.Parent = YouTube
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0, 0, 0.0323181152, 0)
+TextButton_2.Size = UDim2.new(0, 115, 0, 23)
+TextButton_2.Font = Enum.Font.Unknown
+TextButton_2.Text = "YouTube"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+
+ImageLabel.Parent = YouTube
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0800590217, 0, 0.0323181152, 0)
+ImageLabel.Size = UDim2.new(0, 26, 0, 23)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=5027762797"
+
+UIStroke.Color = Color3.fromRGB(255, 255, 255)
+UIStroke.Parent = Xylo
+
+-- Scripts:
+
+local function VKFN_fake_script() -- Xylo.LocalScript 
+	local script = Instance.new('LocalScript', Xylo)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(VKFN_fake_script)()
