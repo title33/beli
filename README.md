@@ -17,6 +17,16 @@ local TextButton_2 = Instance.new("TextButton")
 local ImageLabel = Instance.new("ImageLabel")
 local UIStroke = Instance.new("UIStroke")
 
+local beliValueUpdated = Instance.new("BindableEvent")
+
+game:GetService("Players").LocalPlayer.Data.Beli.Changed:Connect(function()
+    beliValueUpdated:Fire()
+end)
+
+beliValueUpdated.Event:Connect(function()
+    TextLabel_2.Text = game:GetService("Players").LocalPlayer.Data.Beli.Value
+end)
+
 -- Properties:
 
 ScreenGui.Parent = game:GetService("CoreGui")
