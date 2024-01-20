@@ -22,8 +22,6 @@ local UIStroke = Instance.new("UIStroke")
 ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-
-
 Xylo.Name = "Xylo"
 Xylo.Parent = ScreenGui
 Xylo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
