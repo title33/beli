@@ -1,3 +1,5 @@
+_G.Marine = true 
+
 if not _G.Marine or _G.Pirate then
 	spawn(function()
 		while wait() do
@@ -43,4 +45,4 @@ if _G.Pirate then
 	end)
 end
 
-_G.Marine = true 
+
