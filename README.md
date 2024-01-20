@@ -46,8 +46,8 @@ Logo.Parent = Xylo
 Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Logo.BorderSizePixel = 0
-Logo.Position = UDim2.new(0.0375426635, 0, 0.0248962659, 0)
-Logo.Size = UDim2.new(0, 65, 0, 69)
+Logo.Position = UDim2.new(0, 0, 0.00414937781, 0)
+Logo.Size = UDim2.new(0, 54, 0, 59)
 Logo.Image = "rbxassetid://14491200389"
 
 Beli.Name = "Beli"
@@ -66,8 +66,8 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(-0.0402930416, 0, 0.128205135, 0)
-TextLabel.Size = UDim2.new(0, 86, 0, 34)
+TextLabel.Position = UDim2.new(0.0366300382, 0, 0.102564104, 0)
+TextLabel.Size = UDim2.new(0, 57, 0, 30)
 TextLabel.Font = Enum.Font.Unknown
 TextLabel.Text = "BELI :"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -79,8 +79,8 @@ TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.15384616, 0, 0.307692319, 0)
-TextLabel_2.Size = UDim2.new(0, 108, 0, 20)
+TextLabel_2.Position = UDim2.new(0.472527474, 0, 0.230769232, 0)
+TextLabel_2.Size = UDim2.new(0, 59, 0, 25)
 TextLabel_2.Font = Enum.Font.Unknown
 TextLabel_2.Text = "100"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -126,8 +126,8 @@ YouTube.Parent = Xylo
 YouTube.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
 YouTube.BorderColor3 = Color3.fromRGB(0, 0, 0)
 YouTube.BorderSizePixel = 0
-YouTube.Position = UDim2.new(0.604095459, 0, 0.248962596, 0)
-YouTube.Size = UDim2.new(0, 115, 0, 26)
+YouTube.Position = UDim2.new(0.406143248, 0, 0.253111959, 0)
+YouTube.Size = UDim2.new(0, 174, 0, 26)
 
 UICorner_4.CornerRadius = UDim.new(0, 2)
 UICorner_4.Parent = YouTube
@@ -137,8 +137,8 @@ TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.BackgroundTransparency = 1.000
 TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0, 0, 0.0323181152, 0)
-TextButton_2.Size = UDim2.new(0, 115, 0, 23)
+TextButton_2.Position = UDim2.new(1.75388379e-07, 0, -0.0384615399, 0)
+TextButton_2.Size = UDim2.new(0, 174, 0, 27)
 TextButton_2.Font = Enum.Font.Unknown
 TextButton_2.Text = "YouTube"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -149,8 +149,8 @@ ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.0800590217, 0, 0.0323181152, 0)
-ImageLabel.Size = UDim2.new(0, 26, 0, 23)
+ImageLabel.Position = UDim2.new(-0.00115037244, 0, 0.0707796514, 0)
+ImageLabel.Size = UDim2.new(0, 29, 0, 21)
 ImageLabel.Image = "http://www.roblox.com/asset/?id=5027762797"
 
 UIStroke.Color = Color3.fromRGB(255, 255, 255)
@@ -158,7 +158,7 @@ UIStroke.Parent = Xylo
 
 -- Scripts:
 
-local function VKFN_fake_script() -- Xylo.LocalScript 
+local function SXIDK_fake_script() -- Xylo.LocalScript 
 	local script = Instance.new('LocalScript', Xylo)
 
 	local UIS = game:GetService('UserInputService')
@@ -197,4 +197,4 @@ local function VKFN_fake_script() -- Xylo.LocalScript
 	end)
 	
 end
-coroutine.wrap(VKFN_fake_script)()
+coroutine.wrap(SXIDK_fake_script)()
