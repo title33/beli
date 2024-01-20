@@ -22,6 +22,8 @@ local UIStroke = Instance.new("UIStroke")
 ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
+
+
 Xylo.Name = "Xylo"
 Xylo.Parent = ScreenGui
 Xylo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -66,12 +68,12 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.0366300382, 0, 0.102564104, 0)
-TextLabel.Size = UDim2.new(0, 57, 0, 30)
+TextLabel.Position = UDim2.new(0.0256413613, 0, 0.15384616, 0)
+TextLabel.Size = UDim2.new(0, 85, 0, 30)
 TextLabel.Font = Enum.Font.Unknown
 TextLabel.Text = "BELI :"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 32.000
+TextLabel.TextSize = 28.000
 TextLabel.TextWrapped = true
 
 TextLabel_2.Parent = Beli
@@ -84,7 +86,7 @@ TextLabel_2.Size = UDim2.new(0, 59, 0, 25)
 TextLabel_2.Font = Enum.Font.Unknown
 TextLabel_2.Text = "100"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 37.000
+TextLabel_2.TextSize = 28.000
 
 Script.Name = "Script "
 Script.Parent = Xylo
@@ -158,7 +160,7 @@ UIStroke.Parent = Xylo
 
 -- Scripts:
 
-local function SXIDK_fake_script() -- Xylo.LocalScript 
+local function MCULP_fake_script() -- Xylo.LocalScript 
 	local script = Instance.new('LocalScript', Xylo)
 
 	local UIS = game:GetService('UserInputService')
@@ -197,4 +199,4 @@ local function SXIDK_fake_script() -- Xylo.LocalScript
 	end)
 	
 end
-coroutine.wrap(SXIDK_fake_script)()
+coroutine.wrap(MCULP_fake_script)()
