@@ -57,7 +57,7 @@ function thisCode()
             end
         end
     end
-
+    
     function Teleport()
         while wait() do
             pcall(function()
@@ -94,3 +94,50 @@ function thisCode()
         elseif args == "Disable" then
             AllowRunService = false
         end
+        local CoreGui = game:GetService("StarterGui")
+        CoreGui:SetCore("SendNotification", {
+            Title = "Auto Chest",
+            Text = "Subscribe To NeoWare",
+            Duration = math.huge,
+            Callback = AllowRunServiceBind,
+        })
+    end
+
+    local CoreGui = game:GetService("StarterGui")
+    CoreGui:SetCore("SendNotification", {
+        Title = "Auto Chest",
+        Text = "กดซับด้วย",
+        Duration = math.huge,
+        Callback = AllowRunServiceBind,
+    })
+    
+    task.spawn(function()
+        while true do
+            if AllowRunService == true then
+                local hasChar = game.Players.LocalPlayer:FindFirstChild("Character")
+                if not game.Players.LocalPlayer.Character then
+        
+                else
+                    local hasCrewTag = game.Players.LocalPlayer.Character:FindFirstChild("CrewBBG",true)
+                    if hasCrewTag then hasCrewTag:Destroy() end
+                    local hasHumanoid = game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+                    if hasHumanoid then
+                        local Chest = game.Workspace:FindFirstChild("Chest4") or game.Workspace:FindFirstChild("Chest3") or game.Workspace:FindFirstChild("Chest2") or game.Workspace:FindFirstChild("Chest1") or game.Workspace:FindFirstChild("Chest")
+                        
+                        if Chest then
+                            game.Players.LocalPlayer.Character:PivotTo(Chest:GetPivot())
+                            firesignal(Chest.Touched,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                        else
+                            Teleport()
+                            break
+                        end
+                    end 
+                end
+            end
+            task.wait()
+        end
+    end)
+
+end
+
+thisCode()
